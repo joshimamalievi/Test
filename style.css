@@ -1,0 +1,211 @@
+:root {
+    --background: #EEE0CB;
+    --night_hover: #3e5a2c;
+    --night: rgba(62, 90, 44, 0.8);
+    --prime: #BAFF29;
+    --pitch: #4c8527;
+}
+body {
+    background-color: var(--pitch);
+}
+* {
+    margin: 0;
+}
+.navbar img {
+    border-radius: 50%;
+}
+body {
+    font-family: Roboto , serif;
+}
+#navbar {
+    display: flex;
+    align-content: space-around;
+    background: var(--night);
+    width: 100%;
+    height: 8vw;
+    justify-content: space-between;
+    box-shadow: 1px 1px 25px 1px var(--night_hover);
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index: 99;
+}
+
+#navbar:hover {
+    border-radius: 0 0 8% 8%;
+    height: 10vw;
+    box-shadow: 1px 1px 100px 1px var(--night_hover);
+    background-color: var(--night_hover);
+}
+#navbar:hover #logo a {
+    font-size: 3rem;
+}
+#navbar:hover .navbut li a {
+    font-size: 1.6rem;
+}
+#navbar div  {
+    margin: 2rem;
+    width: 20%;
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+.fa-square-minus {
+    font-size: 2rem;
+    color: var(--prime);
+}
+#logo a {
+    padding-left: 15px;
+    text-decoration: none;
+    font-weight: 350;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+    font-family: "Roboto Serif", serif;
+}
+.dot {
+    color: var(--prime)
+}
+.butlist, .socials {
+    display: flex;
+    align-items: center;
+}
+.butlist {
+    justify-content: center;
+    width: 60% !important;
+}
+.socials {
+    justify-content: end;
+}
+.navbut {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+.fa-brands {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.selected {
+    color: var(--prime)!important;
+}
+.navbut li a {
+    display: block;
+    text-align: right;
+    margin: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: 1.5rem;
+    word-break: keep-all;
+    transition: 0.3s ease-out;
+}
+#navbar:hover .navbut li a:hover {
+    color: var(--prime);
+    font-size: 2rem;
+}
+
+/* ----------------------------------------------------NAVBAR ENDING--------------------------------------------------- */
+/* ----------------------------------------------------HEADER START------------------------------------------------------ */
+
+.games {
+    background-color: var(--pitch);
+    margin: 8vw 0 10vw 0; 
+    height: 80vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.othergames {
+    height: 100%;
+    width: 20%;
+}
+.othergames div:first-child {
+    margin: 1vw 1vw 1vw 1vw;
+    top: 5vw;
+    z-index: 2;
+}
+.othergames div:first-child:hover {
+    top: 5vw;
+    height: 12vw;
+}
+.othergames div {
+    height: 11vw;
+    width: 18vw;
+    margin: 0 1vw 1vw 1vw;
+    padding-top: 1vw;
+    font-size: 0.7rem;
+    background-color: var(--night);
+    border-radius: 2%;
+    box-shadow: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    top: 20vw;
+}
+.othergames div:last-child {
+    top: 34vw;
+    z-index: 0;
+}
+.othergames div:last-child:hover{
+    top: 33vw;
+    z-index: 2;
+    height: 12vw;
+}
+.othergames div:hover {
+    height: 13vw;
+    top: 19vw;
+    box-shadow: 1px 1px 35px 1px var(--night_hover);
+    background-color: var(--night_hover);
+}
+.games h1 {
+    font-family: Roboto , serif;
+    font-weight: 200;
+}
+.games div {
+    text-align: center;
+    color: white;
+}
+.maingame {
+    font-size: 1rem;
+    height: 100%;
+    width: 60%;
+    align-items: center;
+}
+.thegame {
+    position: absolute;
+    top: 7vw;
+    margin: 2vw;
+    padding: 1vw;
+    height: 33vw;
+    left: 20vw;
+    width: 53vw;
+    background-color: var(--night);
+    border-radius: 2%;
+    box-shadow: 1px 1px 1px 1px var(--night_hover);
+    transition: all 0.5s ease;
+}
+.thegame:hover{
+    top: 7vw;
+    left: 19.5vw;
+    height: 34w;
+    width: 54vw;
+    box-shadow: 1px 1px 35px 1px var(--night_hover);
+    background-color: var(--night_hover);
+}
+main {
+    height: 10vw;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {}
